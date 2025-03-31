@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио | Веб-разработчик</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">Портфолио</a>
+                <ul class="nav-links">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#portfolio">Работы</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Привет, я <span>Герман</span></h1>
+                <h2 class="hero-subtitle">Веб-разработчик</h2>
+                <p class="hero-text">Создаю современные и адаптивные веб-сайты с уникальным дизайном.</p>
+                <a href="#portfolio" class="btn">Мои работы</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/myphoto.jpg" alt="Мое фото" class="profile-img">
+                </div>
+                <div class="about-text">
+                    <h3>Я веб-разработчик из села</h3>
+                    <p>Специализируюсь на создании современных веб-приложений с использованием передовых технологий. Имею 1 год опыт работы в веб-разработке.</p>
+                    <p>Моя цель - создавать не только функциональные, но и визуально привлекательные продукты, которые решают бизнес-задачи клиентов.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span>Имя:</span>
+                            <p>Пашин Герман</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <p>не было подходящего</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Опыт:</span>
+                            <p>1+ лет</p>
+                        </div>
+                        <div class="info-item">
+                            <span>Телефон:</span>
+                            <p>+7 906 112 43 94 пишите жду</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Скачать резюме</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Мои навыки</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>HTML5</h3>
+                        <span>20%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress html"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>CSS3</h3>
+                        <span>17%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress css"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>JavaScript</h3>
+                        <span>0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress js"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>React</h3>
+                        <span>0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress react"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>Node.js</h3>
+                        <span>0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress node"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h3>UI/UX Design</h3>
+                        <span>0%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress design"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Мои работы</h2>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="web">Веб-сайты</button>
+                <button class="filter-btn" data-filter="app">Приложения</button>
+                <button class="filter-btn" data-filter="design">Дизайн</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://via.placeholder.com/600x400" alt="Проект 1">
+                    <div class="portfolio-overlay">
+                        <h3>Корпоративный сайт</h3>
+                        <p>Веб-разработка</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="https://via.placeholder.com/600x400" alt="Проект 2">
+                    <div class="portfolio-overlay">
+                        <h3>Мобильное приложение</h3>
+                        <p>React Native</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="https://via.placeholder.com/600x400" alt="Проект 3">
+                    <div class="portfolio-overlay">
+                        <h3>Лендинг</h3>
+                        <p>UI/UX Дизайн</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="https://via.placeholder.com/600x400" alt="Проект 4">
+                    <div class="portfolio-overlay">
+                        <h3>Интернет-магазин</h3>
+                        <p>Веб-разработка</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="https://via.placeholder.com/600x400" alt="Проект 5">
+                    <div class="portfolio-overlay">
+                        <h3>CRM система</h3>
+                        <p>React + Node.js</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="https://via.placeholder.com/600x400" alt="Проект 6">
+                    <div class="portfolio-overlay">
+                        <h3>Брендинг</h3>
+                        <p>Графический дизайн</p>
+                        <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Россия</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>кыш отсюда</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+7 906 112 43 94</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Мое Портфолио. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
